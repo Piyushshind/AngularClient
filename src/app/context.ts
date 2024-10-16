@@ -1,4 +1,4 @@
-export class inventotyData {
+export class inventoryData {
     bookID: number = 0;
     bookTitle: String = "";
 
@@ -6,4 +6,4 @@ export class inventotyData {
     sellingPrice: number = 0;
 
     bookCatagory: String = "";
-}
+} 

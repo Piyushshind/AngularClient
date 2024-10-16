@@ -1,0 +1,21 @@
+<div class="book-form">
+    <h2>Add New Book</h2>
+    <form (ngSubmit)="saveBook()">
+      <label>Title:</label>
+      <input type="text" [(ngModel)]="book.bookTitle" name="bookTitle" required>
+    
+      <label>Author:</label>
+      <input type="text" [(ngModel)]="book.autherName" name="autherName" required>
+    
+      <label>Price:</label>
+      <input type="number" [(ngModel)]="book.sellingPrice" name="sellingPrice" required>
+    
+      <label>Category:</label>
+      <input type="text" [(ngModel)]="book.bookCatagory" name="bookCatagory">
+    
+      <button type="submit">Save Book</button>
+    </form>
+    
+    
+  </div>
+  

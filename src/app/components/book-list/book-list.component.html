@@ -1,0 +1,31 @@
+<div class="book-list">
+    <h2>Book Inventory</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Book ID</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Price</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of books">
+          <td>{{ book.bookID }}</td>
+          <td>{{ book.bookTitle }}</td>
+          <td>{{ book.autherName }}</td>
+          <td>{{ book.sellingPrice }}</td>
+          <td>{{ book.bookCatagory }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div *ngFor="let book of books">
+      <h3>{{ book.bookTitle }} - {{ book.autherName }}</h3>
+      <button (click)="editBook(book.bookID)">Edit</button>
+      <button (click)="deleteBook(book.bookID)">Delete</button>
+    </div>
+    
+    
+  </div>
+  
